@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Formulario con Validaciones</title>
+  <title>Formulario</title>
 </head>
 <body>
 
-  <center><h1>Formulario con Validaciones</h1></center>
+  <center><h1>Formulario</h1></center>
   
-  <form id="myForm" autocomplete="off" novalidate>
+  <form id="My_Formulario" autocomplete="off">
     <div>
       <label for="name">Nombre:</label>
       <input type="text" id="name" name="name" required minlength="3" maxlength="50" pattern="^[a-zA-Z\s]+$">
@@ -19,33 +19,33 @@
     </div>
     
     <div>
-      <label for="age">Edad:</label>
-      <input type="number" id="age" name="age" required min="18" max="100" step="1">
+      <label for="Edad">Edad:</label>
+      <input type="number" id="Edad" name="Edad" required min="18" max="100" step="1">
     </div>
     
     <div>
-      <label for="gender">Género:</label>
-      <select id="gender" name="gender" required>
+      <label for="gerero">Género:</label>
+      <select id="genero" name="genero" required>
         <option value="">Selecciona un género</option>
-        <option value="male">Masculino</option>
-        <option value="female">Femenino</option>
-        <option value="other">Otro</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Otro">Otro</option>
       </select>
     </div>
     
     <div>
       <label>Intereses:</label>
-      <input type="checkbox" id="interest1" name="interests[]" value="sports" required>
-      <label for="interest1">Deportes</label>
-      <input type="checkbox" id="interest2" name="interests[]" value="music">
+      <input type="checkbox" id="interes1" name="interes" value="deportes" required>
+      <label for="interes1">Deportes</label>
+      <input type="checkbox" id="interes2" name="interes" value="musica">
       <label for="interest2">Música</label>
-      <input type="checkbox" id="interest3" name="interests[]" value="reading">
-      <label for="interest3">Lectura</label>
+      <input type="checkbox" id="interes3" name="interes" value="Lectura">
+      <label for="interes3">Lectura</label>
     </div>
     
     <div>
-      <label for="profile_pic">Foto de perfil:</label>
-      <input type="file" id="profile_pic" name="profile_pic" accept="image/png, image/jpeg" multiple required>
+      <label for="Foto de perfil">Foto de perfil:</label>
+      <input type="file" id="Foto de perfil" name="Foto de perfil" accept="image/png, image/jpeg" multiple required>
     </div>
     
     <button type="submit">Enviar</button>
