@@ -1,55 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Formulario</title>
-</head>
-<body>
+  <head>
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Formulario</h1>
 
-  <center><h1>Formulario</h1></center>
-  
-  <form id="My_Formulario" autocomplete="off">
-    <div>
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" required minlength="3" maxlength="50" pattern="^[a-zA-Z\s]+$">
-    </div>
-    
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    
-    <div>
-      <label for="Edad">Edad:</label>
-      <input type="number" id="Edad" name="Edad" required min="18" max="100" step="1">
-    </div>
-    
-    <div>
-      <label for="gerero">Género:</label>
-      <select id="genero" name="genero" required>
-        <option value="">Selecciona un género</option>
-        <option value="Masculino">Masculino</option>
-        <option value="Femenino">Femenino</option>
-        <option value="Otro">Otro</option>
-      </select>
-    </div>
-    
-    <div>
-      <label>Intereses:</label>
-      <input type="checkbox" id="interes1" name="interes" value="deportes" required>
-      <label for="interes1">Deportes</label>
-      <input type="checkbox" id="interes2" name="interes" value="musica">
-      <label for="interest2">Música</label>
-      <input type="checkbox" id="interes3" name="interes" value="Lectura">
-      <label for="interes3">Lectura</label>
-    </div>
-    
-    <div>
-      <label for="Foto de perfil">Foto de perfil:</label>
-      <input type="file" id="Foto de perfil" name="Foto de perfil" accept="image/png, image/jpeg" multiple required>
-    </div>
-    
-    <button type="submit">Enviar</button>
-  </form>
-  
-</body>
+    <form id="My_Formulario" autocomplete="off">
+      <div>
+        <label for="name">Nombre:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="3"
+          maxlength="50"
+          pattern="^[a-zA-Z\s]+$"
+        />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div>
+        <label for="Edad">Edad:</label>
+        <input
+          type="number"
+          id="Edad"
+          name="Edad"
+          required
+          min="18"
+          max="100"
+          step="1"
+        />
+      </div>
+
+      <div>
+        <label for="gerero">Género:</label>
+        <select id="genero" name="genero" required>
+          <option value="">Selecciona un género</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+          <option value="Otro">Otro</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Intereses:</label>
+        <input
+          type="checkbox"
+          id="interes1"
+          name="interes"
+          value="deportes"
+          required
+        />
+        <label for="interes1">Deportes</label>
+        <input type="checkbox" id="interes2" name="interes" value="musica" />
+        <label for="interest2">Música</label>
+        <input type="checkbox" id="interes3" name="interes" value="Lectura" />
+        <label for="interes3">Lectura</label>
+      </div>
+
+      <div>
+        <label for="Foto de perfil">Foto de perfil:</label>
+        <input
+          type="file"
+          id="Foto de perfil"
+          name="Foto de perfil"
+          accept="image/png, image/jpeg"
+          multiple
+          required
+        />
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
 </html>
