@@ -1,42 +1,46 @@
 <html>
+
 <head>
   <title>Formulario</title>
 </head>
+
 <body>
   <h1>Formulario Con HTML4</h1>
-  
+
   <form action="submit.php" method="post" enctype="multipart/form-data">
     <label for="name">Nombre:</label>
     <input type="text" id="name" name="name" pattern="[a-zA-Z\s]+" title="Solo se permiten letras y espacios" required>
-    
+
     <div><label for="email">Email:</label>
-    <input type="text" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingresa un email válido" required>
+      <input type="text" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+        title="Ingresa un email válido" required>
     </div>
     <label for="age">Edad:</label>
     <input type="text" id="age" name="age" pattern="\d+" title="Solo se permiten números" required>
-    
+
     <div><label for="gender">Género:</label>
-    <select id="gender" name="gender" required>
-      <option value="">Selecciona un género</option>
-      <option value="male">Masculino</option>
-      <option value="female">Femenino</option>
-    </select>
+      <select id="gender" name="gender" required>
+        <option value="">Selecciona un género</option>
+        <option value="male">Masculino</option>
+        <option value="female">Femenino</option>
+      </select>
     </div>
-    
+
     <label>Intereses:</label>
     <div>
-        <label for="interes1">Deportes:</label>   
-    <input type="text" id="interes1" name="interes" value="tus deportes favoritos" required>
+      <label for="interes1">Deportes:</label>
+      <input type="text" id="interes1" name="interes" value="tus deportes favoritos" required>
     </div>
     <label for="interes2">Música:</label>
     <input type="text" id="interes2" name="interes" value="tu musica favorita" required>
     <div>
-    
-    <label for="foto de perfil">Foto de perfil:</label>
-    <input type="file" id="foto de perfil" name="foto de perfil" required>
-    <div>
-    <button type="submit">Enviar</button>
-    </div>
+
+      <label for="foto de perfil">Foto de perfil:</label>
+      <input type="file" id="foto de perfil" name="foto de perfil" required>
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
   </form>
 </body>
+
 </html>
